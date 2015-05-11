@@ -6,14 +6,15 @@ public class StringlistGenerator_Thread implements Runnable {
 	private String[] chars;
 	private FileWriter writer;
 
-	public StringlistGenerator_Thread(int index, String[] chartable, int arraySize, FileWriter fileWriter) {
+	public StringlistGenerator_Thread(int index, String[] stringtable, int arraySize, FileWriter fileWriter) {
 		this.a = index;
-		this.chars = chartable;
+		this.chars = stringtable;
 		this.maxn = arraySize-1;
 		this.writer = fileWriter;
 	}
 
 	public void run() {
+        // add/remove for-loops of the same style when fiddling with combination length 
 		try {
 			for(int b = 0; b <= maxn; b++) {
 			    for(int c = 0; c <= maxn; c++) {
