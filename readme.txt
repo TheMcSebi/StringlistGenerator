@@ -1,2 +1,4 @@
-On Windows:
-compile using 'javac.exe *.java'
+Code sample to generate combinations of strings
+
+compile with 'javac.exe *.java'
+start with 'java -cp . StringlistGenerator_Launcher'
